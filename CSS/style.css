@@ -1,0 +1,369 @@
+/* Globalne style */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stylizacja menu nawigacyjnego */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.navbar-nav {
+    font-size: 1.2rem; /* Powiększenie czcionki menu */
+}
+
+.navbar-nav .nav-link {
+    color: #333 !important;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+}
+
+/* Stylizacja przycisków rejestracji i logowania */
+.navbar .btn {
+    font-size: 0.9rem;
+}
+
+.navbar .btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.navbar .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.navbar .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004494;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .navbar-nav {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .navbar-nav .nav-link {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .ml-auto {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .btn {
+        margin: 5px 0;
+    }
+}
+
+/* Stylizacja slajdu */
+.hero-slide {
+    position: relative;
+    height: 93vh; /* Zmniejszona wysokość widoku */
+    background: url('https://zaparatemprzezswiat.pl/wp-content/uploads/2018/09/DSCF0269a.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Umożliwia pionowe wyśrodkowanie elementów */
+    align-items: center; /* Wyśrodkowanie poziome */
+    justify-content: center; /* Wyśrodkowanie pionowe */
+    text-align: center;
+    overflow: hidden;
+    padding: 0; /* Usunięcie paddingu, aby uniknąć dodatkowych przesunięć */
+    box-sizing: border-box; /* Zapewnia, że padding i border są uwzględniane w szerokości i wysokości elementu */
+}
+
+/* Efekt rozmycia na tle slajdu */
+.hero-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; /* Używa tła kontenera */
+    filter: blur(8px); /* Efekt rozmycia */
+    z-index: 0; /* Ustawienie tła za treścią */
+}
+
+/* Ustawienia dla tekstu i scroll-down */
+.hero-slide h1,
+.hero-slide p {
+    margin: 0; /* Usunięcie marginesu, aby uniknąć przesunięć */
+    padding: 0; /* Usunięcie paddingu */
+    width: 100%; /* Szerokość na 100% kontenera */
+    max-width: 800px; /* Maksymalna szerokość dla lepszej kontroli */
+    box-sizing: border-box; /* Umożliwia kontrolę szerokości i paddingu */
+    position: relative; /* Ustawienie pozycji tekstu nad rozmytym tłem */
+    z-index: 1; /* Ustawienie tekstu na wierzchu */
+}
+
+.hero-slide h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px; /* Odstęp między nagłówkiem a paragrafem */
+}
+
+.hero-slide p {
+    font-size: 1.25rem;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    z-index: 2; /* Ustawienie wyższej wartości z-index, aby przycisk był widoczny na wierzchu */
+}
+
+.scroll-down:hover {
+    opacity: 0.7;
+}
+
+/* Stylizacja strzałki */
+.scroll-down:before {
+    content: '▼'; /* Strzałka w dół */
+    display: block;
+    font-size: 2rem;
+}
+
+/* Stylizacja sekcji formularzy */
+section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Stylizacja formularzy */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    padding: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+/* Stylizacja przycisków */
+.btn-primary, .btn-outline-primary {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004494;
+}
+
+.btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Linki */
+a {
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Marginesy */
+.mt-3 {
+    margin-top: 1rem;
+}
+
+/* Stylizacja grupy inputów */
+.inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0;
+    max-width: 100%;
+    position: relative;
+}
+
+.inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid) ~ label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: #e8e8e8;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+}
+
+/* Stylizacja sekcji z informacjami */
+.info_section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    color: #333;
+}
+
+.info_section h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.info_col {
+    margin-bottom: 30px;
+}
+
+.info_contact a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info_contact a:hover {
+    color: #007bff;
+}
+
+.info_contact i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.info_link_box {
+    margin-top: 20px;
+}
+
+.info_links a {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.info_links a:hover {
+    color: #007bff;
+}
+
+.info_links a.active {
+    font-weight: bold;
+}
+
+.info_social a {
+    font-size: 1.6rem; /* Większa wielkość czcionki dla lepszej widoczności */
+    color: #333; /* Kolor ikon społecznościowych */
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.info_social a:hover {
+    color: #007bff; /* Kolor ikon po najechaniu */
+}
+
+/* animacja */
+section {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+section.visible {
+    opacity: 1;
+}
+
+footer {
+    margin-top: auto; /* Ustawi stopkę na dole kontenera flex */
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 1rem;
+    color: #343a40;
+    font-size: 10px;
+}
