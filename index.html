@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <!-- Podstawowe metadane -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="keywords" content="">
+  <meta name="description" content="BitCare - kuźnia komputerów na miarę">
+  <meta name="author" content="">
+
+  <title>Stona</title>
+
+  <!-- Krytyczny CSS inline -->
+<style>
+  body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; }
+  .logo { width: 150px; height: auto; }
+</style>
+
+<!-- Lazy Load CSS -->
+<link rel="stylesheet" href="css/bootstrap.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="css/font-awesome.min.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="css/responsive.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</noscript>
+</head>
+<body>
+  <div class="hero_area">
+    <!-- początek nagłówka -->
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid ">
+          <div class="contact_nav">
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <nav class="navbarr">
+              <a class="navbarr-brand" href="index.html">
+                <img src="images/logo-min.webp" alt="Logo " class="logo" loading="lazy">
+              </a>
+            </nav>
+
+            <style>
+              .navbarr {
+                height: 55px;
+              }
+            
+              @media (max-width: 768px) {
+                .navbar {
+                  justify-content: center;
+                }
+              }
+            
+              @media (max-width: 480px) {
+                .navbarr {
+                  height: 40px;
+                }
+              }
+            </style>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Strona główna <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="service.html">O nas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Usługi
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="montaz.html">Montaż komputerów</a>
+                          <a class="dropdown-item" href="diagnostyka.html">Diagnostyka</a>
+                          <a class="dropdown-item" href="doradztwo.html">Doradztwo</a>
+                          <a class="dropdown-item" href="serwis.html">Serwis</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Kontakt</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+              </ul>
+          </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- koniec nagłówka -->
+
+    <!-- Początek slidera z tłem wideo -->
+<section class="slider_section animate-on-scroll" id="animateServices">
+  <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="video/v1.mp4" type="video/mp4">
+      Twoja przeglądarka nie obsługuje wideo.
+    </video>
+    
+
+  </div>
+  <div id="customCarousel1" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="detail-box">
+                <h1>Witamy na naszej stronie</h1>
+                <p>Zobacz czym się zajmujemy:</p>
+                <p>Montaż komputerów <br> Diagnostyka <br> Doradztwo <br> Naprawa <br></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="detail-box">
+                <h1>Montaż komputerów</h1>
+                <p>Zbudujemy komputer idealnie dopasowany do Twoich potrzeb! Gaming, praca, streaming – dostosujemy każdy element.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="detail-box">
+                <h1>Diagnostyka</h1>
+                <p>Twój komputer działa wolno lub przestaje odpowiadać? Znajdziemy problem i zaproponujemy najlepsze rozwiązanie.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="detail-box">
+                <h1>Doradztwo</h1>
+                <p>Nie wiesz, jakie części wybrać? Pomożemy Ci stworzyć najlepszy zestaw w Twoim budżecie!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="detail-box">
+                <h1>Serwis</h1>
+                <p>Oferujemy wymianę podzespołów, czyszczenie i konserwację. Twój komputer będzie działał jak nowy!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+<!-- Koniec slidera z tłem wideo -->
+    
+  <!-- początek oferty -->
+  <section class="service_section layout_padding animate-on-scroll" id="animateServices" style="margin-top: 100px; background-color: white; padding: 30px;" >
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container">
+          <h2>
+            Nasza <span>Oferta</span>
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s3.webp" alt="Montaż" width="100" height="100">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Montaż komputerów
+                </h4>
+                <p></p>
+                <a href="montaz.html">
+                  Zobacz więcej
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s4.webp" alt="Diagnostyka" width="100" height="100">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Diagnostyka
+                </h4>
+                <p></p>
+                <a href="diagnostyka.html">
+                  Zobacz więcej
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s1.webp" alt="Doradztwo" width="100" height="100">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Doradztwo
+                </h4>
+                <p></p>
+                <a href="doradztwo.html">
+                  Zobacz więcej
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s2.webp" alt="Naprawy" width="100" height="100">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Serwis
+                </h4>
+                <p></p>
+                <a href="serwis.html">
+                  Zobacz więcej
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- koniec oferty -->
+
+
+<!-- początek o nas -->
+<section class="about_section layout_padding-bottom animate-on-scroll" id="animateAbout" style="padding: 30px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>
+              <span>Dlaczego</span> warto <span>Nas</span> wybrać? 
+            </h2>
+          </div>
+          <ul class="list-unstyled">
+            <li>✅ Indywidualne podejście do każdego klienta</li>
+            <li>✅ Doświadczenie i pasja w budowie komputerów</li>
+            <li>✅ Szybka realizacja zleceń</li>
+            <li>✅ Konkurencyjne ceny</li>
+          </ul>
+          <a href="service.html" class="btn-primary">
+            Zobacz więcej
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="video-box">
+          <video width="2000" height="1500" style="filter: none !important;" autoplay loop muted playsinline>
+            <source src="video/v3.webm" type="video/webm">
+            Twój przeglądarka nie obsługuje formatu WebM.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- koniec o nas -->
+ 
+  <!-- początek obszaru -->
+  <section class="track_section layout_padding animate-on-scroll" id="animateTrack" style="padding: 90px;">
+    <div class="video-background">
+      <video autoplay loop muted playsinline>
+        <source src="video/v2.mp4" type="video/mp4">
+        Twoja przeglądarka nie obsługuje wideo.
+      </video>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="heading_container">
+            <h2>
+              Nasze ceny
+            </h2>
+          </div>
+          <p>
+            <ul class="list-unstyled">
+              <li><strong>💻 Składanie komputera</strong> – od 150 zł</li>
+              <li><strong>🚀 Modernizacja komputera</strong> – od 100 zł</li>
+              <li><strong>🔍 Diagnostyka sprzętu</strong> – 50 zł <small>(odliczane od kosztu naprawy)</small></li>
+              <li><strong>⚡ Diagnostyka oprogramowania</strong> – 50 zł</li>
+              <li><strong>🔧 Naprawa komputera</strong> – wycena indywidualna</li>
+              <li><strong>🧬 Czyszczenie wnętrza komputera</strong> – od 100 zł</li>
+              <li><strong>🌡️ Czyszczenie układu chłodzenia</strong> – 150 zł</li>
+              <li><strong>💾 Instalacja systemu operacyjnego</strong> – 80 zł</li>
+              <li><strong>🖥️ Instalacja sterowników i optymalizacja</strong> – 50 zł</li>
+              <li><strong>📡 Konfiguracja internetu i sieci</strong> – od 100 zł</li>
+              <li><strong>💻 Zdalna pomoc techniczna</strong> – 50 zł / godzina</li>
+              
+          </ul>
+      </section>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- koniec obszaru -->
+
+  <!-- początek kontakt -->
+  <section class="contact_section animate-on-scroll" id="animateContact" style="margin-top: 100px;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-5 offset-md-1">
+          <div class="heading_container">
+            <h2>
+              Skontaktuj się z nami
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-5 offset-md-1">
+          <div class="form_container contact-form">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="54d1c867-2519-4dd3-b8aa-4a9522548315">
+          <div>
+            <input type="text" name="name" placeholder="Imię i Nazwisko" required />
+            </div>
+          <div>
+            <input type="text" name="phone" placeholder="Numer telefonu" required />
+            </div>
+          <div>
+            <input type="email" name="email" placeholder="Email" required />
+            </div>
+          <div>
+            <textarea class="message-box" name="message" placeholder="Wiadomość" required></textarea>
+            </div>
+            <div class="privacy-policy">
+              <input type="checkbox" id="privacy_policy" name="privacy_policy" required />
+              <label for="privacy_policy">
+                Akceptuję <a href="polityka-prywatnosci.html" target="_blank">Politykę Prywatności</a>
+              </label>
+            </div>
+          <div class="btn_box">
+            <button type="submit">
+            Wyślij
+            </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- koniec kontakt -->
+
+  <!-- początek stopki -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> BitCore.  
+        <a href=""> Wszelkie prawa zastrzeżone.</a>
+      </p>
+      <button id="scrollToTopBtn" class="scroll-to-top">
+        &#8679; Na górę
+      </button>
+    </div>
+  </section>
+  <!-- koniec stopki -->
+
+  <!-- Skrypty JS (opóźnione ładowanie) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+  <script src="js/bootstrap.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
+  <script src="js/custom.js" defer></script>
+  <script src="js/nowy.js" defer></script>
+</body>
+</html>
+
