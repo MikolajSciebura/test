@@ -1177,3 +1177,13 @@ video {
 img {
   object-fit: contain; /* Lub 'cover' w zależności od potrzeb */
 }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/roboto.woff2') format('woff2');
+  font-display: swap;
+}
+
+.carousel-inner {
+  min-height: 400px;
+}
